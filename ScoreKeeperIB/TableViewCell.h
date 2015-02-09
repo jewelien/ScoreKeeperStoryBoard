@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewCell.h
 //  ScoreKeeperIB
 //
 //  Created by Julien Guanzon on 2/9/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TableViewCell : UITableViewCell
 
 @end
-

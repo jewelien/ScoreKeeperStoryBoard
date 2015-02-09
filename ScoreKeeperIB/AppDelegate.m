@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "SKTableViewController.h"
+
+
 
 @interface AppDelegate ()
 
@@ -17,6 +20,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    SKTableViewController *tableVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController];
+    
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:tableVC];
+    
     return YES;
 }
 

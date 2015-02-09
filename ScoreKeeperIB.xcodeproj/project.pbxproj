@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		FCC056901A89636200C9336C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC0568F1A89636200C9336C /* main.m */; };
 		FCC056931A89636200C9336C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC056921A89636200C9336C /* AppDelegate.m */; };
-		FCC056961A89636200C9336C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC056951A89636200C9336C /* ViewController.m */; };
 		FCC056991A89636200C9336C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCC056971A89636200C9336C /* Main.storyboard */; };
 		FCC0569B1A89636200C9336C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCC0569A1A89636200C9336C /* Images.xcassets */; };
 		FCC0569E1A89636200C9336C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCC0569C1A89636200C9336C /* LaunchScreen.xib */; };
 		FCC056AA1A89636200C9336C /* ScoreKeeperIBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC056A91A89636200C9336C /* ScoreKeeperIBTests.m */; };
+		FCC056BE1A8967B800C9336C /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC056BC1A8967B800C9336C /* TableViewCell.m */; };
+		FCC056C21A896F0B00C9336C /* SKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCC056C11A896F0B00C9336C /* SKTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +33,16 @@
 		FCC0568F1A89636200C9336C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FCC056911A89636200C9336C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FCC056921A89636200C9336C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FCC056941A89636200C9336C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FCC056951A89636200C9336C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FCC056981A89636200C9336C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCC0569A1A89636200C9336C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FCC0569D1A89636200C9336C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FCC056A31A89636200C9336C /* ScoreKeeperIBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreKeeperIBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCC056A81A89636200C9336C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCC056A91A89636200C9336C /* ScoreKeeperIBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeperIBTests.m; sourceTree = "<group>"; };
+		FCC056BB1A8967B800C9336C /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		FCC056BC1A8967B800C9336C /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		FCC056C01A896F0B00C9336C /* SKTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTableViewController.h; sourceTree = "<group>"; };
+		FCC056C11A896F0B00C9336C /* SKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +86,10 @@
 			children = (
 				FCC056911A89636200C9336C /* AppDelegate.h */,
 				FCC056921A89636200C9336C /* AppDelegate.m */,
-				FCC056941A89636200C9336C /* ViewController.h */,
-				FCC056951A89636200C9336C /* ViewController.m */,
+				FCC056C01A896F0B00C9336C /* SKTableViewController.h */,
+				FCC056C11A896F0B00C9336C /* SKTableViewController.m */,
+				FCC056BB1A8967B800C9336C /* TableViewCell.h */,
+				FCC056BC1A8967B800C9336C /* TableViewCell.m */,
 				FCC056971A89636200C9336C /* Main.storyboard */,
 				FCC0569A1A89636200C9336C /* Images.xcassets */,
 				FCC0569C1A89636200C9336C /* LaunchScreen.xib */,
@@ -219,9 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCC056961A89636200C9336C /* ViewController.m in Sources */,
 				FCC056931A89636200C9336C /* AppDelegate.m in Sources */,
+				FCC056BE1A8967B800C9336C /* TableViewCell.m in Sources */,
 				FCC056901A89636200C9336C /* main.m in Sources */,
+				FCC056C21A896F0B00C9336C /* SKTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
