@@ -9,7 +9,7 @@
 #import "SKTableViewController.h"
 #import "TableViewCell.h"
 
-@interface SKTableViewController () <UITableViewDelegate>
+@interface SKTableViewController () <UITableViewDelegate, UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 
@@ -51,7 +51,10 @@
 }
 
 
-
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
 
 
 

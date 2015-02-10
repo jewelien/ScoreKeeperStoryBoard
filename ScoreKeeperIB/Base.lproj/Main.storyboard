@@ -26,6 +26,9 @@
                                             <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                                 <rect key="frame" x="55" y="10" width="97" height="30"/>
                                             </variation>
+                                            <connections>
+                                                <outlet property="delegate" destination="YGP-z9-yqE" id="74T-kJ-bFj"/>
+                                            </connections>
                                         </textField>
                                         <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-100" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="1sv-QE-Ojj">
                                             <rect key="frame" x="236" y="8" width="94" height="29"/>
